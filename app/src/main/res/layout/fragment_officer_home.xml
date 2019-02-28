@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".officer.OfficerHomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundgrey"
+        android:elevation="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@drawable/signinbg"
+                android:scaleType="centerCrop"
+
+                >
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+
+                    android:elevation="30dp"
+                    app:srcCompat="@drawable/logo" />
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/buttonReportsOfficer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color1"
+                    android:drawableLeft="@drawable/ic_menu_settings"
+                    android:drawablePadding="10dp"
+                    android:padding="16dp"
+                    android:layout_marginTop="16dp"
+
+                    android:gravity="center_vertical"
+                    android:text="Reports" />
+
+                <Button
+                    android:id="@+id/buttonClinicOfficer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color2"
+                    android:drawableLeft="@drawable/ic_menu_camera"
+                    android:padding="16dp"
+                    android:layout_marginTop="16dp"
+
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Clinic" />
+                <Button
+                    android:id="@+id/buttonContactUsOfficer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color3"
+                    android:padding="16dp"
+                    android:layout_marginTop="16dp"
+                    android:drawableLeft="@drawable/ic_menu_camera"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Contact Us" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

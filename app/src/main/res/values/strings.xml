@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">H-Care</string>
+    <string name="error_invalid_email">This username is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="copy_right" translatable="false">Copyrights © %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about_us_1">ABC Hospital Pathology Laboratory is an initiative of Dr X Y Z. She completed her M.B.B.S. and M.D. from Government Medical College, Miraj.</string>
+    <string name="about_us_2">It is one of the best reliable laboratory on sinhagad road, pune.</string>
+    <string name="about_us_3">ABC Hospital Pathology Laboratory employs a caring, competent and qualified staff who is devoted to patient needs and accuracy of results. Every attempt is made to ensure that samples are collected and transported optimally so that results obtained are accurate. The very best and modern machines are used for analyzing samples. Sample collection and labeling is bar coded to ensure accuracy. Analysing machines are directly networked to servers to enable accurate transfer of data. Environment for optimum machine working is maintained by air conditioning which in turn, ensures accurate results.</string>
+    <string name="title_activity_officer_main">OfficerMainActivity</string>
+</resources>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#f3f3f3"
+    android:layout_marginBottom="1dp"
+
+    android:descendantFocusability="beforeDescendants">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="5dp"
+        android:descendantFocusability="afterDescendants"
+        android:orientation="horizontal"
+        android:padding="2dip">
+
+        <LinearLayout
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dip"
+            android:padding="3dip">
+
+            <ImageView
+                android:id="@+id/list_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/report" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/icon"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:id="@+id/DoctorLayout_ibgjkd"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:padding="2dp">
+
+                <customfonts.MyTextView
+                    android:id="@+id/testName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="test1"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="15dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/DoctorLayout_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <customfonts.MyTextView
+                    android:id="@+id/txtDoctorName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="Dr.-"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="15dp" />
+
+                <customfonts.MyTextView
+                    android:id="@+id/doctorName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <customfonts.MyTextView
+                    android:id="@+id/txtlabcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="5"
+                    android:gravity="center|left"
+                    android:text="Lab Code :"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="15dp" />
+
+                <customfonts.MyTextView
+                    android:id="@+id/labCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="5"
+                    android:gravity="center|left"
+                    android:text="test3"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <customfonts.MyTextView
+                    android:id="@+id/txtAmt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="5"
+                    android:gravity="center|left"
+                    android:text="Total Fee :"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="15dp" />
+
+                <customfonts.MyTextView
+                    android:id="@+id/Amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="5"
+                    android:gravity="center|left"
+                    android:text="test3"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <customfonts.MyTextView
+                android:id="@+id/submitDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="5"
+                android:gravity="center|left"
+                android:text="Date"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:id="@+id/CurrentStateLayout_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="10">
+
+                <customfonts.MyTextView
+                    android:id="@+id/txtstate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center|left"
+                    android:text="Current Status :"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="15dp" />
+
+                <customfonts.MyTextView
+                    android:id="@+id/reportStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:gravity="center|left"
+                    android:padding="2dp"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <!-- <LinearLayout
+                 android:id="@+id/CurrentStateLdffdayout_id"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:paddingLeft="0dp"
+                 android:paddingRight="10dp"
+                 android:visibility="gone">
+
+                 <SeekBar
+                     android:id="@+id/SeekBarrr_id"
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:max="10"
+                     android:paddingLeft="0dp"
+                     android:paddingRight="0dp"
+                     android:progress="6"
+                     android:progressDrawable="@drawable/progress_drawable"
+                     android:thumb="@drawable/thumb_drawable"
+                     android:thumbOffset="0dp" />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:id="@+id/CurrentStateLdffddfsayout_id"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="0dp"
+                 android:orientation="horizontal"
+                 android:paddingLeft="0dp"
+                 android:paddingRight="5dp"
+                 android:visibility="visible"
+                 android:weightSum="10">
+
+                 <ProgressBar
+                     android:id="@+id/mf_progress_bar"
+                     style="?android:attr/progressBarStyleHorizontal"
+                     android:layout_width="0dp"
+                     android:layout_height="7dp"
+                     android:layout_gravity="center_vertical"
+                     android:layout_margin="0dp"
+                     android:layout_weight="8"
+                     android:foregroundGravity="center"
+                     android:progress="10"
+                     android:progressDrawable="@drawable/green_progress_drawable"
+                     android:thumb="@drawable/thumb_drawable" />
+
+                 <customfonts.MyTextView
+                     android:id="@+id/ProgressPercentage"
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="right"
+                     android:layout_weight="2"
+                     android:gravity="right"
+                     android:text="10%"
+                     android:textColor="#000000"
+                     android:textStyle="bold" />
+             </LinearLayout>-->
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

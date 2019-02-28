@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/signinbg"
+        android:scaleType="centerCrop"
+
+        ></FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="180dp"
+        android:src="@drawable/logo"
+
+
+        />
+
+
+    <customfonts.MyTextView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="ABC Hospital"
+        android:textColor="#fff"
+        android:textSize="34dp"
+
+
+        />
+
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+
+        android:layout_alignEnd="@+id/image"
+        android:layout_marginTop="-1dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+    <LinearLayout
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+
+        >
+
+
+        <customfonts.MyEditText
+            android:id="@+id/usernameLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46dp"
+            android:background="#0000"
+            android:gravity="left"
+            android:hint="Username"
+            android:maxLength="12"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="@color/colortext"
+            android:textColorHint="@color/colorhint"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="56dp"
+            android:layout_marginBottom="10dp"
+            android:background="#dad8d8" />
+
+        <customfonts.MyEditText
+            android:id="@+id/passwordLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46dp"
+            android:layout_marginRight="46dp"
+            android:background="#0000"
+            android:drawableRight="@drawable/eye"
+            android:hint="Mobile No."
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:textColor="@color/colortext"
+            android:textColorHint="@color/colorhint"
+            android:textSize="16dp"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="56dp"
+
+            android:background="#dad8d8" />
+
+
+        <customfonts.MyTextView
+
+            android:id="@+id/loginBtnView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="120dp"
+            android:background="#2b73e1"
+            android:gravity="center"
+            android:padding="9dp"
+            android:text="Log in"
+            android:textColor="#fff"
+            android:textSize="16dp"
+
+
+            />
+
+    </LinearLayout>
+
+
+    <customfonts.MyTextView
+        android:id="@+id/acc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/create"
+        android:gravity="center"
+        android:lines="1"
+        android:text="Don't have account?"
+
+        />
+
+    <TextView
+        android:id="@+id/create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp"
+        android:gravity="center"
+        android:lines="1"
+        android:text="Create one now"
+        android:textColor="#2b73e1"
+
+
+        />
+
+
+</RelativeLayout>
